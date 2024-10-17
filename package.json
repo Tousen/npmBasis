@@ -1,0 +1,28 @@
+{
+  "name": "npmBasis",
+  "version": "1.0.0",
+  "description": "Basis Encoder binaries",
+  "main": "index.js",
+  "bin": "bin/basisu.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tousen/npmBasis.git"
+  },
+  "keywords": [
+    "Basis",
+    "encoder",
+    "binary",
+    "image-to-basis"
+  ],
+  "scripts": {
+    "build": "node_modules/.bin/copyfiles ./bin/** index.js dist"
+  },
+  "author": "konstantin.chuprin",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
+}
